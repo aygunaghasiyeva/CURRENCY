@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+* { 
+
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Quicksand', sans-serif;
+}
+.button{
+    margin: 20px;
+    background-color: white;
+    padding: 10px;
+}
+.bir{
+    margin: 10px;
+}
+.svg{
+	margin: 10px;
+}
+header {
+    height: 70px;
+    background-color: #f5f5f5;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding-left: 170px;
+}
+.converterContain {
+
+	display: flex;
+	justify-content: center;
+	margin-top: 4vw;
+}
+.converter {
+
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	height: 23vw;
+	padding-top: 8vw;
+	padding-bottom: 2vw;
+	padding-left: 15%;
+	padding-right: 15%;
+
+}
+.converterSideContain {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+
+}
+.converterSide {
+
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+
+}
+.converterSideTitle {
+
+	font-size: 1.5vw;
+	color: #777;
+
+}
+.converterSwitcher {
+
+	display: flex;
+	flex-direction: row;
+	margin-top: 2%;
+
+}
+.converterSwitcherItem {
+
+	display: flex;
+	width: 20%;
+	border: 1px solid #777;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-size: 1.5vw;
+	cursor: pointer;
+	transition: 0.2s linear all;
+
+}
+.converterSwitcherItem:hover {
+
+	background-color: #e5e5e5;
+	color: white;
+
+}
+
+.converterSwitcherItem:first-child {
+
+	border-top-left-radius: 0.6vw;
+	border-bottom-left-radius: 0.6vw;
+
+}
+.converterSwitcherItem:last-child {
+
+	border-top-right-radius: 0.6vw;
+	border-bottom-right-radius: 0.6vw;
+
+}
+.activeInputSwitcherItem, .activeOutputSwitcherItem {
+
+	background-color: #514DDF;
+	color: white;
+
+}
+.converterSwitcherArrow {
+
+	width: 0.7vw;
+	height: 0.7vw;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	transform: rotate(135deg);
+	transition: 0.2s linear all;
+
+}
+.converterSwitcherItem:hover > .converterSwitcherArrow {
+
+	border-color: white;
+
+} 
+.converterInputBox {
+
+	width: 90%;
+	padding: 5%;
+	margin-top: 4%;
+	border: 1px solid #777;
+
+}
+.converterInput, .converterOutput {
+
+	width: 100%;
+	border: 0px;
+	font-size: 3vw;
+
+}
+input:focus-visible {
+
+	outline: 0px;
+
+}
+.converterInputBoxRate, .converterOutputBoxRate {
+
+	margin-top: 5%;
+	font-size: 1vw;
+	color: #777;
+	font-weight: 300;
+
+}
+.converterSideChangeContain {
+
+	width: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: pointer;
+	transition: 0.2s linear all;
+
+}
+.converterSideChangeContain > img {
+
+	user-select: none;
+	pointer-events: none;
+
+}
+.converterSideChangeContain{
+margin-top: 70px;
+}
+.converterSideChangeContain:hover {
+
+	opacity: 0.5;
+
+}
+.converterDateConatin {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3%;
+
+}
+.converterDateTitle {
+
+	font-size: 1.5vw;
+	color: #777;
+
+}
+.converterDate {
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-top: 0.5%;
+	width: 22%;
+	padding: 1%;
+	border: 1px solid #777;
+	border-radius: 1vw;
+	font-size: 1vw;
+
+}
+
+.converterDate > p {
+
+	user-select: none;
+
+}
+
+.converterSwitcherWindow {
+
+
+	position: absolute;
+	z-index: 3;
+	width: 70vw;
+	height: 23vw;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	display: none;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: white;
+	border: 0.1vw solid #777;
+	border-radius: 3vw;
+
+}
+
+.switcherWindowColumn {
+
+	display: flex;
+	width: 17vw;
+	flex-direction: column;
+	justify-content: space-around;
+
+}
+
+.switcherWindowItem {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	cursor: pointer;
+	font-size: 1.4vw;
+	transition: 0.3s linear all;
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	border-bottom: 0.1vw solid #777;
+	border-top: 0.1vw solid #777;
+
+}
+
+.switcherWindowItem:hover {
+
+	background-color: #e5e5e5;
+
+}
+
+.switcherWindowItem p {
+
+	font-weight: 300;
+
+}
+
+.switcherWindowItem b {
+
+	font-weight: 500;
+
+}
